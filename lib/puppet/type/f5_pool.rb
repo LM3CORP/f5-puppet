@@ -218,6 +218,24 @@ Puppet::Type.newtype(:f5_pool) do
         ...
       ]"
 
+
+  newproperty(:gatewayFailsafeDevice) do
+    desc "gatewayFailsafeDevice."
+  end
+
+  newproperty(:minUpMembers) do
+    desc "minUpMembers"
+  end
+
+  newproperty(:minUpMembersAction) do
+    desc "minUpMembersAction"
+  end
+
+  newproperty(:minUpMembersChecking) do
+    desc "minUpMembersChecking"
+  end
+
+
     validate do |value|
       return if value == 'none'
       # First we check that all required keys exist in the hash.

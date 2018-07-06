@@ -72,4 +72,8 @@ Puppet::Type.newtype(:f5_profileclientssl) do
     desc "ciphers."
   end
 
+  newproperty(:passphrase) do
+    desc "passphrase."
+  end
+
 end
